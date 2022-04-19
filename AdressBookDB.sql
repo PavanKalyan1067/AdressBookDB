@@ -18,3 +18,15 @@ values('Harsha','Vargheese','645 Catherine Street','Bangalore','Karnataka',24300
 ('Anita','Yadav','19 Augusta Avenue','Lucknow','Uttar Pradesh',113201,87210505053,'anita@gmail.com');
 
 select * from Address_Book_Table
+
+
+------ UC 4: Ability to Edit Contact Person Based on their Name ------
+--Edit Email based on Name--
+Update Address_Book_Table
+set Email='PavaniYadav@gmail.com'
+where FirstName='Pavani'
+
+--Edit Address based on Name--
+Update Address_Book_Table
+set Address='836 Heritage Road'
+where FirstName='Rujula' and LastName='Mathialagan';
