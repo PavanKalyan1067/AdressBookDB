@@ -48,3 +48,10 @@ values('meena','Vargheese','22 Catherine Street','Hosur','Karnataka',2545001,957
 select Count(*),state,City
 from Address_Book_Table
 Group by state,City
+
+------ UC 8: Ability to retrieve entries sorted alphabetically ------
+
+select *
+from Address_Book_Table
+where City='Bangalore'
+order by(FirstName)
