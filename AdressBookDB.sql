@@ -67,6 +67,11 @@ update Address_Book_Table
 set AddressBookName='FriendName',Type='Friends'
 where FirstName='Harsha' or FirstName='Rujula'
 
+------ UC 10: Ability to get number of contact persons by Type------
+select Count(*) as NumberOfContacts,Type
+from Address_Book_Table
+Group by Type
+
 --Update values for Type=Family--
 update Address_Book_Table
 set AddressBookName='Mom',Type='Family'
